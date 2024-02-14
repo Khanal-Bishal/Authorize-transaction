@@ -1,0 +1,25 @@
+.cursor {
+  user-select: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 95%;
+  margin: 0px auto;
+}
+
+.subtitle1 {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: var(--neutral-crl-700);
+  font-family: var(--ff-bold);
+}
+
+.subtitle2 {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: var(--neutral-crl-700);
+  font-family: var(--ff-bold);
+}

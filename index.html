@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src=“https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js”></script> -->
+    <title>Document</title>
+</head>
+<body>
+   <!--========== Header section ==========-->
+    <header class="container cursor header">
+       <div class="header__wrapper">
+            <h2 class="header__title">Authorize transaction</h2>
+            <span class="header__sub-title ">Pay with your Pyypl app</span>
+       </div> 
+    </header>
+
+    <!--========== Main section ==============-->
+    <main class="">
+        <!------- Logo section  ------------>
+        <section class=" container main__logo-wrapper">
+            <img src="./assets/pyypllogo.svg" alt="pyppllogo" class="main__pyypl-logo">
+            <span class="main__logo-desc">Pay</span>
+        </section>
+
+        <!------- Main-card section  ---------->
+        <section class="card__container">
+            <div class="card__wrapper">
+                <div class="card__merchant-container  card__content-flex">
+                    <span>Merchant</span>
+                    <span>Amazonica UK</span>
+                </div>
+                <div class="card__transaction-container card__content-flex">
+                    <span class="card__transaction-desc">Transaction</span>
+                    <span class="card__transaction-id">12345782342345534a</span>
+                </div>
+                <div class="card__date-container card__content-flex">
+                    <span>Date</span>
+                    <span>06.02.2024</span>
+                </div>
+                <div class="card__transaction-amount-container card__content-flex">
+                    <span>Transaction amount</span>
+                    <span>USD 272.00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-------- Pyppl customer section  ------------->
+        <section class="customer__section container">
+            <p class="customer__desc">
+                Pyypl customers can pay directly from  the app.
+                Click "Authenticate" to open the Pyypl app
+            </p>
+        </section>
+
+        <!---------- Scan the QR section  -------------->
+        <section class="scan__section container">
+            <p class="scan__desc">
+               Scan the QR code in case the Pyypl  app is on another 
+               device and authenticate the payment
+            </p>
+        </section>
+
+        <!---------- QR code section  -------------->
+        <section class="qr__section">
+            <img src="./assets/qr-code.png" alt="" width="150px">
+        </section>
+
+        <!------------ Button section ------------->
+        <section class="btn__container container">
+                <button class="btn__cancel">
+                    Cancel
+                </button>
+                <button class="btn__authenticate">
+                    Authenticate
+                </button>
+        </section>
+
+    </main>
+</body>
+</html>
