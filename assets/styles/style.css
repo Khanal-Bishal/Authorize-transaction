@@ -4,8 +4,10 @@
 /**
 * ==========Header section================ 
 */
+
 .header {
   margin-top: 40px;
+  display: none;
 }
 
 .header__wrapper {
@@ -27,6 +29,21 @@
 /**
 *  =============Main section=========== 
 */
+main {
+  display: none;
+}
+/*----------- Spinner section ---------- */
+.spinner {
+  border: none;
+  width: 300px;
+  height: 300px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
 
 /* --------Logo section--------- */
 .main__logo-wrapper {
@@ -48,6 +65,26 @@
   color: var(--secondary-clr-400);
 }
 
+/* ---------Error section  --------*/
+.error__container {
+  padding: 0px 16px;
+  margin-top: 30px;
+  text-align: center;
+  color: var(--error-clr-main);
+  font-weight: var(--font-weight-bold);
+  font-size: 16px;
+  display: none;
+  width: 95%;
+  margin: 0px auto;
+
+  p {
+    width: 80%;
+    margin: 40px auto 0px;
+  }
+}
+.error__container-image {
+  width: 60%;
+}
 /* ------------Card section---------- */
 .card__container {
   background-image: linear-gradient(to left, var(--neutral-clr-0), #dddddd),
@@ -78,8 +115,15 @@
   flex-wrap: nowrap;
 }
 
+.card__merchant-name {
+  width: 65%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: end;
+}
+
 .card__transaction-id {
-  width: 50%;
+  width: 65%;
   overflow-wrap: break-word;
   word-wrap: break-word;
   text-align: end;
@@ -159,6 +203,13 @@
   .card__container {
     width: 50%;
   }
+  .card__merchant-name {
+    width: 60%;
+  }
+  .card__transaction-id {
+    width: 60%;
+  }
+
   .customer__section {
     width: 50%;
   }
@@ -167,6 +218,10 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .spinner {
+    width: 400px;
+    height: 400px;
+  }
   .card__container {
     width: 45%;
   }
@@ -190,6 +245,14 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .error__container {
+    p {
+      width: 40%;
+    }
+  }
+  .error__container-image {
+    width: 40%;
+  }
   .card__container {
     width: 25%;
   }

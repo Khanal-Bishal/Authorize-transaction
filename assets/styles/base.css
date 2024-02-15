@@ -51,7 +51,17 @@
   --neutral-clr-900: #181818;
 
   /**
-    *The font family is used to give font styles:
+    * These colors indicate an emotion of negativity.
+    * Generally used across error states.
+  */
+  --error-clr-50: #fff4f0;
+  --error-clr-200: #ffe5db;
+  --error-clr-300: #ff7a7b;
+  --error-clr-main: #ff0000;
+  --error-clr-800: #c00707;
+
+  /**
+    *The font weight is used to give font boldness:
     */
   --font-weight-extra-bold: 900;
   --font-weight-bold: 700;
@@ -61,6 +71,14 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  padding: 16px;
+}
+
+body1 {
+  font-size: 20;
+  line-height: 28;
+  letter-spacing: 0.8;
+  color: var(--neutral-clr-700);
 }
 
 h1 {
