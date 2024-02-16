@@ -8,18 +8,79 @@
   margin: 0px auto;
 }
 
-.subtitle1 {
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0px;
-  color: var(--neutral-crl-700);
-  font-family: var(--ff-bold);
-}
-
-.subtitle2 {
+/* =============BODY ========= */
+.body1 {
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0px;
-  color: var(--neutral-crl-700);
-  font-family: var(--ff-bold);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.body2 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.body3 {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  font-weight: var(--font-weight-semi-bold);
+}
+
+/* =============SUBTITLE ===========  */
+.subtitle1 {
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0px;
+  font-weight: var(--font-weight-bold);
+}
+
+.subtitle2 {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  font-weight: var(--font-weight-bold);
+}
+
+.subtitle3 {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  font-weight: var(--font-weight-bold);
+}
+
+/* BUTTON  */
+.btn-xs {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  font-weight: var(--font-weight-extra-bold);
+}
+
+.btn-s {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  font-weight: var(--font-weight-extra-bold);
+}
+.btn-m {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  font-weight: var(--font-weight-extra-bold);
+}
+.btn-l {
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  font-weight: var(--font-weight-extra-bold);
+}
+.btn-xl {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  font-weight: var(--font-weight-extra-bold);
 }

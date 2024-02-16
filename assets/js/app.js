@@ -9,6 +9,7 @@ const amount = document.querySelector(".amount");
 const errorContainer = document.querySelector(".error__container");
 const paymentContainer = document.querySelector(".payment__container");
 const spinner = document.querySelector(".spinner");
+const authorizeTransaction = document.querySelector(".header__wrapper");
 
 /**
  * @description renders the error into the DOM
@@ -22,8 +23,9 @@ const renderError = () => {
  * @description displays the error message along with error image
  */
 const displayErrorBlock = () => {
-  console.log("From error block bro");
+  console.log("From  display error block ");
   paymentContainer.style.display = "none";
+  authorizeTransaction.style.display = "none";
   errorContainer.style.display = "block";
 };
 

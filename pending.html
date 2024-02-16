@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pending</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/pyypltitle.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/base.css" />
+    <link rel="stylesheet" href="./assets/styles/utils.css" />
+    <link rel="stylesheet" href="./assets/styles/pending.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/museo-sans-rounded"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!------------ Header logo section  -------->
+    <header>
+      <figure class="header__logo-container">
+        <img
+          src="./assets/images/pyypllogo.svg"
+          alt="pyypl logo"
+          class="header__pyypl-logo"
+        />
+        <img
+          src="./assets/images/pyypltitle.svg"
+          alt="pyypl title"
+          class="header__pyypl-title"
+        />
+      </figure>
+    </header>
+
+    <!------ Spinner section  ----------->
+    <iframe
+      class="spinner"
+      src="https://lottie.host/embed/91375d8e-a7e2-488d-b116-98fe5dacedb8/4XWMTMlzOc.json"
+    ></iframe>
+
+    <!------------ Main section -------------->
+    <main class="container">
+      <!--------- Stop watch image section  ------------>
+      <figure class="watch-icon__container cursor">
+        <img src="./assets/images/stopwatch.svg" alt="stopwatch icon" />
+      </figure>
+
+      <!-- Timer section  -->
+      <section class="timer__container cursor">
+        <span class="timer__will-expire subtitle3">Will expire in</span>
+        <span class="timer__time-remaining subtitle3">4:32</span>
+      </section>
+
+      <!---------- peding payment section ---------->
+      <section class="pending__container cursor">
+        <h2 class="pending__heading">Pending payment authorization</h2>
+        <p class="pending__desc body1">
+          Please authorize the payment from the Pyypl app. If you don't see the
+          authorization request in the app, please try again, or scan the QR
+          code
+        </p>
+      </section>
+
+      <!--------------- Logo section  ----------------->
+      <section class="logo__container cursor">
+        <img
+          src="./assets/images/pyypllogo.svg"
+          alt="pyppllogo"
+          class="logo__icon"
+        />
+        <span class="logo__desc subtitle2">Pay</span>
+      </section>
+
+      <!----------- Qr code section  -------------->
+      <figure class="qr__container">
+        <img src="./assets/images/qr-code.png" alt="" />
+      </figure>
+
+      <!------------ Button section ------------->
+      <section class="btn__container container">
+        <button class="btn__cancel cursor">Cancel</button>
+        <button class="btn__retry btn-xs cursor">Retry</button>
+      </section>
+    </main>
+  </body>
+</html>

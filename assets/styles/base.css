@@ -2,37 +2,24 @@
   /** The primary color palette is used across all the interactive
     *  elements such as CTA's, links, inputs, active states etc.
     * */
-  --primary-clr-50: #c6f8e7;
-  --primary-clr-100: #89f3d9;
-  --primary-clr-200: #53e1cd;
-  --primary-clr-300: #34c5bf;
-  --primary-clr-400: #23969c;
-  --primary-clr-main: #216e79;
-  --primary-clr-800: #0b4953;
-
-  /**
-    * The secondary color palette is used alongside the primary
-    * to indicate to the user it's the secondary focus.
-    */
-  --secondary-clr-50: #ffe5f8;
-  --secondary-clr-100: #ffcef1;
-  --secondary-clr-200: #f685d6;
-  --secondary-clr-300: #e64bbc;
-  --secondary-clr-400: #cd28a4;
-  --secondary-clr-main: #a71689;
-  --secondary-clr-800: #8c067a;
+  --primary-clr-main: #684fff;
 
   /**
     * The secondary color palette is used alongside the primary to
     * indicate to the user it's the secondary focus.
     */
-  --secondary-clr-50: #e4dffb;
-  --secondary-clr-100: #cfc0fb;
-  --secondary-clr-200: #b69ffb;
-  --secondary-clr-300: #997cf1;
-  --secondary-clr-400: #6f46ea;
-  --secondary-clr-main: #5a2aea;
-  --secondary-clr-800: #3911b0;
+  --secondary-clr-main: #c245eb;
+
+  /**
+    * The secondary2 color palette is used in CTA_buttons, interactive
+    * icons
+    */
+  --secondary2-clr-main: #34c5bf;
+
+  /**
+  *The secondary color3 palette is used for interactive texts
+  */
+  --secondary3-clr-main: #ffbf00;
 
   /**
     * These colors are used as supporting secondary colors in:
@@ -65,26 +52,18 @@
     */
   --font-weight-extra-bold: 900;
   --font-weight-bold: 700;
-  --font-weight-semi-bold: 500;
+  --font-weight-semi-bold: 600;
   --font-weight-regular: 400;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  padding: 16px;
-}
-
-body1 {
-  font-size: 20;
-  line-height: 28;
-  letter-spacing: 0.8;
-  color: var(--neutral-clr-700);
+  font-family: "Museo Sans Rounded", sans-serif;
 }
 
 h1 {
   font-size: 48px;
   line-height: 56px;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   color: var(--neutral-clr-700);
   font-weight: var(--font-weight-extra-bold);
 }
@@ -92,15 +71,15 @@ h1 {
 h2 {
   font-size: 40px;
   line-height: 48px;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   color: var(--neutral-clr-700);
   font-weight: var(--font-weight-extra-bold);
 }
 
 h3 {
   font-size: 32px;
-  line-height: 36px;
-  letter-spacing: 1px;
+  line-height: 40px;
+  letter-spacing: 0px;
   color: var(--neutral-clr-700);
   font-weight: var(--font-weight-extra-bold);
 }

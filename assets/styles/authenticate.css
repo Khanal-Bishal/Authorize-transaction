@@ -6,16 +6,38 @@
 */
 
 .header {
-  margin-top: 40px;
   display: none;
+  padding: 10px 0px;
 }
 
+/* ----------Header logo section ----------- */
+.header__logo-container {
+  margin: 0px auto;
+  background-color: #fafafa;
+  padding: 8px 16px;
+  box-shadow: 2px 1px 0.5px var(--neutral-clr-50);
+}
+.header__logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header__pyypl-logo {
+  width: 50px;
+}
+
+.header__pyypl-title {
+  width: 75px;
+}
+/*---------- Authenticate section ------------- */
 .header__wrapper {
+  padding: 16px;
   text-align: center;
 }
 
 .header__title {
-  color: var(--secondary-clr-400);
+  color: var(--primary-clr-main);
   font-weight: 900;
   margin-bottom: 3px;
 }
@@ -31,7 +53,9 @@
 */
 main {
   display: none;
+  padding: 16px;
 }
+
 /*----------- Spinner section ---------- */
 .spinner {
   border: none;
@@ -47,7 +71,7 @@ main {
 
 /* --------Logo section--------- */
 .main__logo-wrapper {
-  margin-top: 40px;
+  margin-top: 15px;
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -62,16 +86,15 @@ main {
 
 .main__logo-desc {
   font-weight: 900;
-  color: var(--secondary-clr-400);
+  color: var(--primary-clr-main);
 }
 
 /* ---------Error section  --------*/
 .error__container {
-  padding: 0px 16px;
-  margin-top: 30px;
+  padding: 90px 16px;
   text-align: center;
   color: var(--error-clr-main);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semi-bold);
   font-size: 16px;
   display: none;
   width: 95%;
@@ -136,7 +159,7 @@ main {
 
 .customer__desc {
   font-weight: var(--font-weight-bold);
-  color: var(--secondary-clr-400);
+  color: var(--secondary-clr-main);
 }
 
 /*------------ Scan the QR section ---------*/
@@ -181,7 +204,7 @@ main {
 }
 
 .btn__authenticate {
-  background-color: var(--secondary-clr-400);
+  background-color: var(--secondary-clr-main);
   border: 0px;
   border-radius: 8px;
   color: var(--neutral-clr-0);
@@ -233,6 +256,12 @@ main {
   }
 }
 @media screen and (min-width: 992px) {
+  .header__logo-wrapper {
+    width: 80%;
+    justify-content: start;
+    margin: auto;
+  }
+
   .card__container {
     width: 35%;
   }

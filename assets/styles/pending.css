@@ -1,0 +1,190 @@
+@import url("./base.css");
+@import url("./utils.css");
+
+/* -------------Header section ------------- */
+body {
+  padding: 0;
+}
+
+header {
+  background-color: #fafafa;
+  padding: 10px 0px;
+  box-shadow: 2px 1px 0.5px var(--neutral-clr-50);
+}
+
+/* ----------Header logo section ----------- */
+.header__logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  padding: 8px 16px;
+}
+.header__pyypl-logo {
+  width: 50px;
+}
+
+.header__pyypl-title {
+  width: 75px;
+}
+
+/*----------- Spinner section ---------- */
+.spinner {
+  border: none;
+  width: 300px;
+  height: 300px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+/* ------------- Main section --------------  */
+main {
+  padding: 16px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------ Stop watch icon section --------  */
+.watch-icon__container {
+  width: 175px;
+  height: 190px;
+  margin: 0px auto;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* ----------- Timer section -----------------  */
+.timer__container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.timer__will-expire {
+  color: var(--secondary2-clr-main);
+}
+
+.timer__time-remaining {
+  color: var(--primary-clr-main);
+}
+
+/* ----------- Pending payment section ---------  */
+.pending__container {
+  text-align: center;
+}
+
+.pending__heading {
+  color: var(--secondary3-clr-main);
+  margin-bottom: 10px;
+}
+
+.pending__desc {
+  color: var(--neutral-clr-600);
+  text-align: center;
+  width: 90%;
+  margin: 0px auto;
+}
+
+/* Logo  section  */
+.logo__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo__icon {
+  padding-top: 5px;
+  width: 35px;
+}
+
+.logo__desc {
+  color: var(--primary-clr-main);
+  font-weight: var(--font-weight-extra-bold);
+}
+
+/* -------------- QR code section --------------- */
+.qr__container {
+  text-align: center;
+}
+
+/* ----------------- Button section ------------------ */
+.btn__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__cancel {
+  border: 0px;
+  background-color: transparent;
+  font-weight: var(--font-weight-bold);
+  color: var(--neutral-clr-500);
+  font-size: 16px;
+}
+
+.btn__cancel:hover {
+  color: var(--secondary2-clr-main);
+  transition: 500ms;
+}
+
+.btn__retry {
+  border: 0px;
+  background-color: var(--primary-clr-main);
+  color: white;
+  padding: 10px;
+  width: 120px;
+  border-radius: 8px;
+}
+
+.btn__retry:hover {
+  background-color: var(--secondary2-clr-main);
+  transition: 250ms;
+}
+
+/*  ----------------Media query --------------  */
+@media screen and (min-width: 576px) {
+  .pending__desc {
+    width: 80%;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pending__desc {
+    width: 70%;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header__logo-container {
+    width: 80%;
+    margin: auto;
+    justify-content: start;
+  }
+  .pending__desc {
+    width: 60%;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pending__desc {
+    width: 45%;
+    margin: 0px auto;
+  }
+}
