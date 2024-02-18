@@ -1,3 +1,10 @@
+/**
+ * @description parses url and returns payment order id
+ *
+ * @param {String} queryParamName
+ *
+ * @returns  {String}
+ */
 function getQueryParam(queryParamName) {
   const queryString = window.location.search;
   if (!queryString) {
